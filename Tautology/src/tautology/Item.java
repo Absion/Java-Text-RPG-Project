@@ -15,7 +15,12 @@ public class Item {
     private Double itemValue = new Double (0.0);
     private ItemType itemType = new ItemType();
     private DescriptiveLore itemHistory = new DescriptiveLore();
-
+    private enum ElementType{
+    FIRE, WIND, WATER, ELECTRIC, EARTH, DARK, LIGHT, NULL
+    }
+    private ElementType selectedElement;
+    
+    
     //Getters and Setters
     public String getItemName() {
         return itemName;
@@ -63,6 +68,14 @@ public class Item {
 
     public void setItemHistory(DescriptiveLore itemHistory) {
         this.itemHistory = itemHistory;
+    }
+
+    public ElementType getElementType() {
+        return selectedElement;
+    }
+
+    public void setSetElementType(ElementType input) {
+        this.selectedElement = input;
     }
     
     

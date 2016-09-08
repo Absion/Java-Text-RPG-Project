@@ -20,7 +20,12 @@ public class ItemType {
     }
 
     public void setIsItWeapon(Boolean isItWeapon) {
-        this.isItWeapon = isItWeapon;
+        
+        if (this.weaponType.toString().equals("NULL")){
+           this.isItWeapon = false; 
+        }
+        else 
+            this.isItWeapon = true;
     }
 
     public Boolean getIsItEquipable() {
