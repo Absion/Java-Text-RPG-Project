@@ -10,26 +10,27 @@ public class Item {
     //The qualities of an item
     
     private String itemName;
-    private Double itemWeight = new Double(0.00);
+    private Double itemWeight = new Double(0.0);
     private Double itemHealth = new Double(0.0);
     private Double itemValue = new Double (0.0);
-    private ItemType itemType = new ItemType();
-    private DescriptiveLore itemHistory = new DescriptiveLore();
+    private String itemHistory;
     private enum ElementType{
     FIRE, WIND, WATER, ELECTRIC, EARTH, DARK, LIGHT, NULL
     }
     private ElementType selectedElement;
+    private enum ItemRank{
+        NORMAL, RARE, LEGENDARY, EPIC
+    }
+    private ItemRank selectedRank;
     
     
     //Getters and Setters
     public String getItemName() {
         return itemName;
     }
-
     public void setItemName(String itemName) {
         this.itemName = itemName;
     }
-
     public Double getItemWeight() {
         return itemWeight;
     }
@@ -54,21 +55,15 @@ public class Item {
         this.itemValue = itemValue;
     }
 
-    public ItemType getItemType() {
-        return itemType;
-    }
-
-    public void setItemType(ItemType itemType) {
-        this.itemType = itemType;
-    }
-
-    public DescriptiveLore getItemHistory() {
+    public String getItemHistory() {
         return itemHistory;
     }
 
-    public void setItemHistory(DescriptiveLore itemHistory) {
+    public void setItemHistory(String itemHistory) {
         this.itemHistory = itemHistory;
     }
+
+    
 
     public ElementType getElementType() {
         return selectedElement;
@@ -76,6 +71,22 @@ public class Item {
 
     public void setSetElementType(ElementType input) {
         this.selectedElement = input;
+    }
+
+    public ElementType getSelectedElement() {
+        return selectedElement;
+    }
+
+    public void setSelectedElement(ElementType selectedElement) {
+        this.selectedElement = selectedElement;
+    }
+
+    public ItemRank getSelectedRank() {
+        return selectedRank;
+    }
+
+    public void setSelectedRank(ItemRank selectedRank) {
+        this.selectedRank = selectedRank;
     }
     
     

@@ -1,10 +1,9 @@
-
 package tautology;
 
 /**
  *
  * @author Absion
  */
-public class ManRace {
+public class GameLogic {
     
 }
