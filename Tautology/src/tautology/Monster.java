@@ -6,12 +6,12 @@ package tautology;
  */
 public class Monster extends LivingBeing {
     
-    private enum MonsterRank {
+    public enum MonsterRank {
         COMMON, ALPHA, LEGENDARY, EPIC
     }
     private MonsterRank selectedRank;
     
-    private enum MonsterType {
+    public enum MonsterType {
         BEAST, AQUATIC, ELEMENTAL, DEMON, HEAVENSENT, FOLIAGE
     }
     private MonsterType selectedType;

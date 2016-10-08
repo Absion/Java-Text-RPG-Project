@@ -10,15 +10,16 @@ public class Item {
     //The qualities of an item
     
     private String itemName;
-    private Double itemWeight = new Double(0.0);
-    private Double itemHealth = new Double(0.0);
-    private Double itemValue = new Double (0.0);
+    private Integer itemWeight = new Integer(0);
+    private Integer itemHealth = new Integer(0);
+    private Integer itemValue = new Integer (0);
     private String itemHistory;
-    private enum ElementType{
+    public enum ElementType{
     FIRE, WIND, WATER, ELECTRIC, EARTH, DARK, LIGHT, NULL
     }
     private ElementType selectedElement;
-    private enum ItemRank{
+    
+    public enum ItemRank{
         NORMAL, RARE, LEGENDARY, EPIC
     }
     private ItemRank selectedRank;
@@ -31,29 +32,31 @@ public class Item {
     public void setItemName(String itemName) {
         this.itemName = itemName;
     }
-    public Double getItemWeight() {
+
+    public Integer getItemWeight() {
         return itemWeight;
     }
 
-    public void setItemWeight(Double itemWeight) {
+    public void setItemWeight(Integer itemWeight) {
         this.itemWeight = itemWeight;
     }
 
-    public Double getItemHealth() {
+    public Integer getItemHealth() {
         return itemHealth;
     }
 
-    public void setItemHealth(Double itemHealth) {
+    public void setItemHealth(Integer itemHealth) {
         this.itemHealth = itemHealth;
     }
 
-    public Double getItemValue() {
+    public Integer getItemValue() {
         return itemValue;
     }
 
-    public void setItemValue(Double itemValue) {
+    public void setItemValue(Integer itemValue) {
         this.itemValue = itemValue;
     }
+    
 
     public String getItemHistory() {
         return itemHistory;

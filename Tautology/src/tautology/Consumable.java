@@ -6,7 +6,7 @@ package tautology;
  */
 public class Consumable extends KeyItem {
     
-    private enum ConsumableType {
+    public enum ConsumableType {
         HEALTH, MANA, STRENGTH, WISDOM, 
         INTELLIGENCE, DEXTERITY, CONSTITUTION, 
         CHARISMA, LUCK, HEALTHPOISON, MANAPOISON, 

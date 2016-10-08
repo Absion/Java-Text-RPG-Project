@@ -10,7 +10,7 @@ public class Humanoid extends LivingBeing {
     
     private String history;
     
-    private enum Class{
+    public enum Class{
         WARRIOR, MARKSMAN, CLERIC, 
         ROUGE, MAGICIAN, MERCENARY, 
         SOLDIER, PUGILIST, MERCHANT,
@@ -18,7 +18,7 @@ public class Humanoid extends LivingBeing {
     }
     private Class selectedClass;
     
-    private enum HumanType{
+    public enum HumanType{
         HUMAN, BEASTMAN, ELF, FAIRY
     }
     private HumanType selectedHumanType;

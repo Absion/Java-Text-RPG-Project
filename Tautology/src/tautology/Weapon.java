@@ -9,7 +9,7 @@ public class Weapon extends KeyItem {
     int damage;
     
     //PREDEFINED LIST OF THE WEAPONS AVAILABLE IN THE GAME 
-    private enum WeaponClass {
+    public enum WeaponClass {
         GREATSWORD, SHORTSWORD, LONGSWORD, DAGGER, LONGSTAFF, FIST, WAND, RAPIER, GUNBLADE, SHIELD, HANDGUN, RIFLE
     }
 

@@ -7,13 +7,13 @@ package tautology;
 public class LivingBeing {
     
     //ASSIGNS GENDER TO A LIVING BEING
-    private enum Gender {
+    public enum Gender {
         MALE, FEMALE, NONGENDER
     }
     private Gender selectedGender;
     
     //ASSIGNS ALIGNMENT TO A LIVING THING
-    private enum Alingment{
+    public enum Alingment{
         LAWFULNEUTRAL, CHAOTICNEUTRAL, NEUTRAL, 
         CHAOTICEVIL, LAWFULEVIL, NEUTRALEVIL,
         LAWFULGOOD, CHAOTICGOOD, NEUTRALGOOD 
@@ -21,7 +21,7 @@ public class LivingBeing {
     private Alingment selectedAlignment;
     
     //ASSIGNS SIZE TO A LIVING THING
-    private enum Size {
+    public enum Size {
     SMALL, MEDIUM, LARGE, GIANT
 }
     private Size selectedSize;
