@@ -35,7 +35,7 @@ public class LivingBeing {
     private int luck;
     private int charisma;
     private int level;
-    
+    private int experience;
     
     private int age;
     private boolean isKillable;
@@ -171,6 +171,14 @@ public class LivingBeing {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getExperience() {
+        return experience;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
     }
     
     
