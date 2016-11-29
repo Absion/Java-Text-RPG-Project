@@ -8,14 +8,20 @@ import java.util.Random;
  */
 public class EnemyGenerator {
 
-    //Random used to create monsters.
-    Random rand = new Random();
+    
+    
 
-    public Monster createCanineMonster(int areaLevel, String areaType) {
+    public static Monster createCanineMonster(int areaLevel, String areaType) {
 
+        //Random used to create monsters.
+        Random rand = new Random();
+        
         Monster dog = new Monster();
         //Sets Canine's level from minimum of 1 to +3 the level of the area
         dog.setLevel(rand.nextInt(areaLevel + 3) + 1);
+        
+        //Sets Canine's age from minimum of 1 to +5 the level of the area
+        dog.setAge(rand.nextInt(areaLevel + 5) + 1);
 
         dog.setIsKillable(true);
         dog.setSelectedAlignment(LivingBeing.Alingment.CHAOTICNEUTRAL);

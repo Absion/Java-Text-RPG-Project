@@ -15,7 +15,7 @@ public class Item {
     private Integer itemValue = new Integer (0);
     private String itemHistory;
     public enum ElementType{
-    FIRE, WIND, WATER, ELECTRIC, EARTH, DARK, LIGHT, NULL
+    FIRE, WIND, WATER, ELECTRIC, EARTH, DARK, LIGHT, BASE
     }
     private ElementType selectedElement;
     
@@ -66,15 +66,6 @@ public class Item {
         this.itemHistory = itemHistory;
     }
 
-    
-
-    public ElementType getElementType() {
-        return selectedElement;
-    }
-
-    public void setSetElementType(ElementType input) {
-        this.selectedElement = input;
-    }
 
     public ElementType getSelectedElement() {
         return selectedElement;

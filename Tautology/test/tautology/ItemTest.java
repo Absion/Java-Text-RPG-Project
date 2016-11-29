@@ -162,30 +162,9 @@ public class ItemTest {
         
     }
 
-    /**
-     * Test of getElementType method, of class Item.
-     */
-    @Test
-    public void testGetElementType() {
-        System.out.println("getElementType");
-        Item instance = new Item();
-        Item.ElementType expResult = null;
-        Item.ElementType result = instance.getElementType();
-        assertEquals(expResult, result);
-        
-    }
+    
 
-    /**
-     * Test of setSetElementType method, of class Item.
-     */
-    @Test
-    public void testSetSetElementType() {
-        System.out.println("setSetElementType");
-        Item.ElementType input = null;
-        Item instance = new Item();
-        instance.setSetElementType(input);
-        
-    }
+ 
 
     /**
      * Test of getSelectedElement method, of class Item.
