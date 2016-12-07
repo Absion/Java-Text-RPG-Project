@@ -8,7 +8,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="407.0" prefWidth="549.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tautology.FXMLStartScreenController">
     <children>
-        <Button fx:id="button" layoutX="275.0" layoutY="352.0" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="127.0" text="New Game">
+        <Button fx:id="button" layoutX="275.0" layoutY="352.0" onAction="#handleNewGameButtonAction" prefHeight="34.0" prefWidth="127.0" text="New Game">
          <font>
             <Font name="DejaVu Sans Condensed Bold" size="13.0" />
          </font></Button>
@@ -16,7 +16,7 @@
          <font>
             <Font name="DejaVu Sans ExtraLight" size="54.0" />
          </font></Label>
-      <Button fx:id="button1" layoutX="416.0" layoutY="352.0" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="119.0" text="Load Game">
+      <Button fx:id="button1" layoutX="416.0" layoutY="352.0" prefHeight="34.0" prefWidth="119.0" text="Load Game">
          <font>
             <Font name="DejaVu Sans Condensed Bold" size="14.0" />
          </font>

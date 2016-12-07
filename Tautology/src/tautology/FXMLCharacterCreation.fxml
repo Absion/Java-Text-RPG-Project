@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tautology.FXMLCharacterCreationController">
-    
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tautology.FXMLCharacterCreationController">
+   <cursor>
+      <Cursor fx:constant="CROSSHAIR" />
+   </cursor>
+   <children>
+      <ImageView fitHeight="256.0" fitWidth="586.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/DialogBox.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="460.0" layoutX="70.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/choice%20box.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="25.0" layoutY="42.0" prefHeight="200.0" prefWidth="547.0">
+         <content>
+            <Label fx:id="dialogBox" prefHeight="198.0" prefWidth="545.0" style="-fx-background-color: black;" text="This is the box where dialog and information about the game will pop up." textFill="#fffefe">
+               <font>
+                  <Font name="Ebrima Bold" size="12.0" />
+               </font></Label>
+         </content>
+      </ScrollPane>
+   </children>
 </AnchorPane>
